@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".ShopActivity">
+
+    <ImageView
+        android:id="@+id/imgSettings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/description_settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:srcCompat="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/txtCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/currentCoins"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <ImageView
+        android:id="@+id/imgShop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/description_shop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgHome"
+        app:srcCompat="@drawable/shop" />
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/description_home"
+        android:focusable="true"
+        android:onClick="closeShop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="397dp"
+        android:layout_height="479dp"
+        android:clipToPadding="true"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideInset"
+        app:layout_constraintBottom_toTopOf="@+id/imgShop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSettings"
+        app:layout_constraintVertical_bias="0.6">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:backgroundTint="@color/light_grey"
+            android:backgroundTintMode="add"
+            android:foregroundTint="@color/light_grey"
+            android:orientation="vertical" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

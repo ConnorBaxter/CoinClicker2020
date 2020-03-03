@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CoinClicker2020</string>
+
+    //coins
+    <string name="currentCoins">0 coins</string>
+    <string name="currentCPS">0 cps</string>
+
+    //ui
+    <string name="description_shop">Shop logo</string>
+    <string name="description_home">Home logo</string>
+    <string name="description_settings">Settings logo</string>
+    <string name="description_back">Back button</string>
+
+    //images
+    <string name="description_coin">Large Yellow Coin</string>
+    <string name="description_"></string>
+
+    //upgrades
+    <string name="upgrade_AutoClicker">Auto Clicker</string>
+    <string name="upgrade_AutoClicker_price">25 coins</string>
+
+</resources>

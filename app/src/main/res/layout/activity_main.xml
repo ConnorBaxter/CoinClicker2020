@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgCoin"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:contentDescription="@string/description_coin"
+        android:focusable="true"
+        android:onClick="coinClicked"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        app:srcCompat="@color/blue" />
+
+    <TextView
+        android:id="@+id/txtCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/currentCoins"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgCoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/txtCPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/currentCPS"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoins"
+        tools:text="@string/currentCPS" />
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/description_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imgShop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:contentDescription="@string/description_shop"
+        android:focusable="true"
+        android:onClick="openShop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toEndOf="@+id/imgHome"
+        app:srcCompat="@drawable/shop" />
+
+    <ImageView
+        android:id="@+id/imgSettings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="664dp"
+        android:clickable="true"
+        android:contentDescription="@string/description_settings"
+        android:focusable="true"
+        android:onClick="openSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toEndOf="@+id/txtCoins"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:srcCompat="@drawable/settings" />
+</androidx.constraintlayout.widget.ConstraintLayout>
